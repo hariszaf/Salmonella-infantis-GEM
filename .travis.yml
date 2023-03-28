@@ -1,6 +1,7 @@
-# deploy:
-#   skip_cleanup: true
-#   github_token: $GITHUB_TOKEN
+# Do I need the deploy?
+deploy:
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
 
 language: python
 sudo: false
