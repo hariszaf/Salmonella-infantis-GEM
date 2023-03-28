@@ -1,10 +1,10 @@
 # Do I need the deploy?
 deploy:
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  provider: script
+  # skip_cleanup: true
+  # github_token: $GITHUB_TOKEN
 
 language: python
-sudo: false
 python: 3.9
 
 cache:
