@@ -18,6 +18,9 @@ before_install:
 install:
   - pip install --upgrade memote
 
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
 script:
   - git checkout "${TRAVIS_BRANCH}"
   - ./scripts/travis_deploy.sh
