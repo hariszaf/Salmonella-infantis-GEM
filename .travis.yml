@@ -2,7 +2,9 @@
 deploy:
   provider: script
   # skip_cleanup: true
-  # github_token: $GITHUB_TOKEN
+  github_token: $GITHUB_TOKEN
+
+# sudo: false
 
 language: python
 python: 3.9
