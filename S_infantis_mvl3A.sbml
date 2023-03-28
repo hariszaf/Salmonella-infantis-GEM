@@ -23283,6 +23283,32 @@
 	</listOfParameters>
 </kineticLaw>
 </reaction>
+<reaction id="R_rxn00124_c0" name="ATP_pyridoxal_5_phosphotransferase_c0" reversible="true">
+<notes>
+<html:p>GENE_ASSOCIATION:((fig|6666666.963724.peg.1714 or fig|6666666.963724.peg.2813) or fig|6666666.963724.peg.3550)</html:p>
+<html:p>PROTEIN_ASSOCIATION:((fig|6666666.963724.peg.1714 or fig|6666666.963724.peg.2813) or fig|6666666.963724.peg.3550)</html:p>
+</notes>
+<listOfReactants>
+<speciesReference species="M_cpd00002_c0" stoichiometry="1"/>
+<speciesReference species="M_cpd00215_c0" stoichiometry="1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="M_cpd00008_c0" stoichiometry="1"/>
+<speciesReference species="M_cpd00016_c0" stoichiometry="1"/>
+<speciesReference species="M_cpd00067_c0" stoichiometry="1"/>
+</listOfProducts>
+<kineticLaw>
+	<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<ci> FLUX_VALUE </ci>
+	</math>
+	<listOfParameters>
+		<parameter id="LOWER_BOUND" value="-1000" name="mmol_per_gDW_per_hr"/>
+		<parameter id="UPPER_BOUND" value="1000" name="mmol_per_gDW_per_hr"/>
+		<parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+		<parameter id="FLUX_VALUE" value="0.0" name="mmol_per_gDW_per_hr"/>
+	</listOfParameters>
+</kineticLaw>
+</reaction>
 <reaction id="R_rxn11801_c0" name="R08273_c0" reversible="true">
 <notes>
 <html:p>GENE_ASSOCIATION:fig|6666666.963724.peg.2157</html:p>

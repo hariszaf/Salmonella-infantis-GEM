@@ -1,8 +1,8 @@
 # Do I need the deploy?
-deploy:
-  provider: script
-  # skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+# deploy:
+#   provider: script
+#   # skip_cleanup: true
+#   github_token: $GITHUB_TOKEN
 
 # sudo: false
 
