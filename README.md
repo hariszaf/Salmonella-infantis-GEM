@@ -30,6 +30,8 @@ to do is:
 3. Run `memote online`.
 4. A history report will be publicly visible at https://hariszaf.github.io/Salmonella-infantis-GEM.
 
+> The `build` will fail if the model stays the exact same. Thus, `merge` if and only if the `.sbml` file has changes. 
+
 ---
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

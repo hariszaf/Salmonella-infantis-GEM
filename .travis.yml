@@ -1,9 +1,4 @@
-# deploy:
-#   skip_cleanup: true
-#   github_token: $GITHUB_TOKEN
-
 language: python
-sudo: false
 python: 3.9
 
 cache:
