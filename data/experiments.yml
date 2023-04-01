@@ -5,3 +5,5 @@ essentiality:
   path: "essentiality/"
 growth:
   path: "growth/"
+minimal_growth_rate: 0.05  # By default, minimal_growth_rate is set to 10% of the biomass function value under the default constraints in the model.
+
