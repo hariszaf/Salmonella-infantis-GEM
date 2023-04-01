@@ -124,6 +124,66 @@ In our case, we used the second approach and we ran the [`rast_annotate.sh`](scr
 
 2. Use `ModelSeedPy` to get a draft reconstruction. **Attention:** no medium, no gapfilling is used at this step. The classic biomass is used! 
 
+Apparently, no boundary reactions are included in this model. 
+
+-------
+
+## Note on metabolic models reconstructions and the SBML format
+
+Glossary as presented in [Thiele and Palsson (2010)](https://doi.org/10.1038/nprot.2009.203):
+
+- **Biochemical, Genetic and Genomic (BiGG) knowledge base** – A BiGG knowledge base is a genome-scale reconstruction, which incorporates in a structured manner genomic, proteomic, biochemical and physiological information of a particular organism or cell. 
+
+- **Biomass reaction** – The biomass reaction lumps all known biomass precursors and their fractional distribution to a cell into one network reaction. 
+
+- **Blocked reactions** – Network reactions that cannot carry any flux in any simulation condition are called blocked reactions. Generally, these blocked reactions are caused by missing links in the network. 
+
+- **Dead-end metabolite** - A dead-end metabolite that is only produced or consumed in the network.
+
+- **Demand reaction** – When the consumption reaction(s) of a metabolite is not known or outside the scope of the reconstruction it can be represented by this unbalanced, intracellular reaction (e.g., 1 A `-->`). 
+
+- **Exchange reactions** - These reactions are unbalanced, extra-organism reactions that represent the supply to or removal of metabolites from the extra-organism “space”. (See Box 3). 
+
+- **Extreme pathways (ExPa’s)**– ExPa’s are a unique and minimal set of flux vectors which lie at the edges of the bounded null space. 
+Biochemically meaningful steady-state solutions can be obtained by nonnegative linear combination of ExPa’s. 
+
+- **Futile cycles** – Stoichiometrically unbalanced cycles, which are associated with energy consumption. 
+
+- **Gene-protein-reaction (GPR) association** – GPR association connect genes, proteins and reactions in a logical relationship (AND, OR). 
+
+- **Genome-scale model (GEM)** – A GEM is derived from a GENRE, by converting it into a mathematical form (i.e., an in silico model) and by assessing computationally its phenotypic properties. 
+
+- **Genome-scale network reconstruction (GENRE)** – A GENRE formed based on an organism-specific BiGG knowledge base. A GENRE is a collection biochemical transformation derived from the genome annotation and the bibliome of the target organism. A network GENRE is unique to an organism, as its genome is. 
+
+<!-- - **Flux variability analysis (FVA)** – FVA is a frequently used computational tool for investigating more global capabilities under a given simulation condition (e.g., network redundancy). Therefore, every network reaction will be chosen as an objective function and the minimal and maximal possible flux value through the reaction is determined by minimizing and maximizing the objective function.  -->
+
+- **Network gap** – A network gap is a missing reaction or function in the network, which can connect one or more dead-end metabolites with the remainder of the network. 
+
+- **Objective function** – An objective function is a network reaction, or a linear combination of network reactions, for which is optimized in the linear programming problem. 
+
+- **Sink reaction** – When the synthesis reaction(s) of a metabolite is not known or outside the scope of the reconstruction its discharge can be represented by this unbalanced, intracellular reaction (e.g., 1 A <-->) 
+
+- **Reduced cost** - A parameter associated with linear programming. It can be used to investigate properties associated with the calculated optimal solution. Each network reaction has a reduced cost values associated, which represents the amount the objective value would increase if the flux through the reaction would be increased by one unit.
+Note that by definition reduced costs values that can increase the objective value are negative numbers. 
+
+
+
+Once the reconstruction is in a computer-readable format, the systems boundaries need to be defined. 
+In particular, this means that for all metabolites that can be consumed or secreted by the target organism, a so-called **exchange reaction** needs to be added to the reconstruction. 
+The exchange reactions can be employed in later simulation to define environmental conditions
+(e.g., carbon source).
+
+The exchange reactions represent the systems boundaries
+
+The `_b` suffix on a compound, e.g. "M_cpd08636_b" stands for a boundary condition.
+Thus it's coming with a `boundaryCondition="true"` flag.
+
+This module uses various heuristics to decide whether a boundary reaction is an exchange, demand or sink reaction. It mostly orientates on the following paper:
+
+
+
+exchange reactions for compounds with a special suffix  (i.e. the “_b” suffix that indicates boundary compounds).
+
 
 
 ---------
