@@ -9,11 +9,21 @@
 
 ## Dependencies 
 
+For the annotation: 
+- `RASTtk`
+
+
+For visualization: 
+- `pafr` R libray
+
+For alignment: 
+- `minimap2`
+
+For GEM reconstruction:
+
 - `memote` 
 - `modelseedpy` 
 - `cobrapy`
-- `RASTtk`
-- `minimap2`
 
 KBase can be used to skip parts of CLI. 
 
