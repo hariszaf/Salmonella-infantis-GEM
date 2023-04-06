@@ -3,8 +3,8 @@
 from modelseedpy import MSBuilder, MSGenome
 import cobra
 
-
-genome_s_i = MSGenome.from_fasta('S_infantis.faa', split=' ')
+repo_parent_path  = '/'.join(os.getcwd().split("/")[:-1])
+genome_s_i = MSGenome.from_fasta( os.path.join(repo_parent_path, 'data/gem_steps_ouput/S_infantis.faa'), split=' ')
 
 model = MSBuilder.build_metabolic_model(model_id = "S_infantis", 
                                         genome = genome_s_i, 
