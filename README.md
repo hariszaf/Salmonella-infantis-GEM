@@ -10,20 +10,21 @@
 ## Dependencies 
 
 For the annotation: 
-- `RASTtk`
+- [`RASTtk`](https://www.bv-brc.org/docs/cli_tutorial/cli_installation.html)
 
 
 For visualization: 
-- `pafr` R libray
+- [`pafr`](https://github.com/dwinter/pafr) R libray
 
 For alignment: 
-- `minimap2`
+- [`minimap2`](https://github.com/lh3/minimap2)
 
 For GEM reconstruction:
 
-- `memote` 
-- `modelseedpy` 
-- `cobrapy`
+- [`memote`](https://github.com/opencobra/memote) 
+- [`modelseedpy`](https://github.com/ModelSEED/ModelSEEDpy)
+- [`cobrapy`](https://github.com/opencobra/cobrapy/)
+- [`dnngior`](https://github.com/MGXlab/DNNGIOR)
 
 KBase can be used to skip parts of CLI. 
 
