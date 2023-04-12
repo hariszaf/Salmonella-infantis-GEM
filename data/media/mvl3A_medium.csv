@@ -1,0 +1,64 @@
+id	name	concentration	minflux	maxflux
+cpd00035	Alanine	0.264	-100	100
+cpd00051	L-Arginine	0.1375	-100	100
+cpd00041	Aspartate	0.46	-100	100
+cpd00084	L-Cysteine	0.15	-100	100
+cpd00023	L-Glutamate	0.55	-100	100
+cpd00119	L-Histidine	0.165	-100	100
+cpd00322	L-Isoleucine	0.321	-100	100
+cpd00107	L-Leucine	0.5225	-100	100
+cpd00039	L-Lysine	0.484	-100	100
+cpd00066	L-Phenylalanine	0.3	-100	100
+cpd00129	L-Proline	0.7425	-100	100
+cpd00054	L-Serine	0.4	-100	100
+cpd00161	L-Threonine	0.2475	-100	100
+cpd00065	L-Tryptophane	0.055	-100	100
+cpd00156	L-Valine	0.3575	-100	100
+cpd00033	Glycine	0.2	-100	100
+cpd00060	L-Methionine	0.1375	-100	100
+cpd00122	N-Acetyl-D-glucosamine	0.5	-100	100
+cpd00246	Inosine	0.1	-100	100
+cpd00184	Thymidine	0.1	-100	100
+cpd23741	4-Aminobenzoic acid  (PABA)	0.1	-100	100
+cpd00423	Cyanocobalamin (Vit. B12)	0.1	-100	100
+cpd00793	Thiamine phosphate	0.1	-100	100
+cpd00220	Riboflavin (Vit. B2)	0.1	-100	100
+cpd02201	4-phosphopantothenate	0.1	-100	100
+cpd16470	3-6-Dihydronicotinic acid	0.1	-100	100
+cpd00104	BIOT	0.1	-100	100
+cpd00493	Pyridoxamine phosphate	0.1	-100	100
+cpd00300	Urate /Uric acid	0.7	-100	100
+cpd27490	Maltodextrins	0.1	-100	100
+cpd22191	6-Phosphogluco-Maltodextrins	0.1	-100	100
+cpd11976	Maltodextrin	0.1	-100	100
+cpd16137	amylopectin(n)	0.1	-100	100
+cpd16141	amylopectin(n-2)	0.1	-100	100
+cpd00265	Amylopectin	0.1	-100	100
+cpd30041	starch n=300 repeat units (80 repeat units amylose-220 repeat units amylopectin)	0.1	-100	100
+cpd19148	Sodium chloride	0.1	-100	100
+cpd00971	Sodium Na+	5	-100	100
+cpd00099	Chloride	7	-100	100
+cpd27326	Kcl	0.1	-100	100
+cpd00205	potassium K+	0.5	-100	100
+cpd00254	Magnesium	0.6	-100	100
+cpd00048	Sulfate	0.6	-100	100
+cpd01098	bile acid	0.1	-100	100
+cpd01318	Glycocholate	0.2	-100	100
+cpd03047 	Taurocholate	0.2	-100	100
+cpd26232	calcium chloride	0.1	-100	100
+cpd00063	Calcium ion	0.1	-100	100
+cpd00030	Mn2+	0.2	-100	100
+cpd10516	Fe+3	0.1	-100	100
+cpd10515	Fe+2	0.1	-100	100
+cpd00021	Fe+	0.1	-100	100
+cpd26289	FeCl3	0.1	-100	100
+cpd26290	FeCl2	0.1	-100	100
+cpd13392	Tween 80 	0.1	-100	100
+cpd27312	Inulin	0.1	-100	100
+cpd11602	Inulin	0.1	-100	100
+cpd00084	L-Cysteine	0.15	-100	100
+cpd00009	Phosphate	0.5	-100	100
+cpd00149	Cobalt	0.1	-100	100
+cpd00034	Zn2+	0.1	-100	100
+cpd00058	Cu2+	0.1	-100	100
+cpd19013	NH4+	0.1	-100	100
