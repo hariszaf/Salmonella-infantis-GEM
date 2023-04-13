@@ -1,5 +1,5 @@
 id	name	concentration	minflux	maxflux
-cpd00035	Alanine	0.264	-100	100
+cpd00035	L-Alanine	0.264	-100	100
 cpd00051	L-Arginine	0.1375	-100	100
 cpd00041	Aspartate	0.46	-100	100
 cpd00084	L-Cysteine	0.15	-100	100
@@ -62,3 +62,48 @@ cpd00149	Cobalt	0.1	-100	100
 cpd00034	Zn2+	0.1	-100	100
 cpd00058	Cu2+	0.1	-100	100
 cpd19013	NH4+	0.1	-100	100
+cpd00635	Cob(I)alamin	0.1	-100	100
+cpd00239	Hydrogen sulfide	0.1	-100	100
+cpd00028	Protoheme	0.1	-100	100
+cpd00011	CO2	0.1	-100	100
+cpd00027	D-Glucose	0.1	-100	100
+cpd27491	Alpha-mannan (yeast)	0.1	-100	100
+cpd00281	4-Aminobutanoate	0.1	-100	100
+cpd00029	Acetate	0.1	-100	100
+cpd00182	Adenosine	0.1	-100	100
+cpd00132	L-Asparagine	0.1	-100	100
+cpd00041	L-Aspartate	0.1	-100	100
+cpd01017	Cys-Gly	0.1	-100	100
+cpd00137	Citrate		0.1	-100	100
+cpd00367	Cytidine	0.1	-100	100
+cpd00438	Deoxyadenosine	0.1	-100	100
+cpd00654	Deoxycytidine	0.1	-100	100
+cpd00277	Deoxyguanosine	0.1	-100	100
+cpd03279	Deoxyinosine	0.1	-100	100
+cpd00412	Deoxyuridine	0.1	-100	100
+cpd00363	Ethanol	0.1	-100	100
+cpd00047	Formate	0.1	-100	100
+cpd00106	Fumarate	0.1	-100	100
+cpd00108	D-Galactose	0.1	-100	100
+cpd00053	L-Glutamine	0.1	-100	100
+cpd00311	Guanosine	0.1	-100	100
+cpd00067	proton	0.1	-100	100
+cpd00221	D-Lactate	0.1	-100	100
+cpd00159	L-Lactate	0.1	-100	100
+cpd00428	Methylglyoxal	0.1	-100	100
+cpd00355	Nicotinamide ribonucleotide (NMN)	0.1	-100	100
+cpd00064	Ornithine	0.1	-100	100
+cpd00430	Phenylacetic acid (PACT)	0.1	-100	100
+cpd00118	Putrescine	0.1	-100	100
+cpd00263	Pyridoxine	0.1	-100	100
+cpd00020	pyruvate	0.1	-100	100
+cpd00264	Spermidine	0.1	-100	100
+cpd00036	Succinate	0.1	-100	100
+cpd00210	Taurine	0.1	-100	100
+cpd00305	Thiamin	0.1	-100	100
+cpd00069	L-Tyrosine	0.1	-100	100
+cpd00092	Uracil	0.1	-100	100
+cpd00073	Urea	0.1	-100	100
+cpd00249	Uridine	0.1	-100	100
+cpd00309	Xanthine	0.1	-100	100
+cpd15432	LipidA	0.001	-100	100
