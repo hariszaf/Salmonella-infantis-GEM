@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Do NOT set -v or -x or your GitHub API token will be leaked!
-set -ue # exit with nonzero exit code if anything fails
+# set -ue # exit with nonzero exit code if anything fails
 
 echo "Parse memote.ini for values."
 deployment=$(awk -F '=' '{if (! ($0 ~ /^;/) && $0 ~ /deployment/) print $2}' memote.ini | tr -d ' ')
