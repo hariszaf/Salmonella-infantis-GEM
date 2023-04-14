@@ -29,4 +29,4 @@ jobs:
     - name: Build and Test
       run: |
         git checkout "${{ github.ref }}"
-        bash .github/gh_deploy.sh ${{ secrets.GITHUB_TOKEN }} ${{ github.ref }} ${{ github.repository }} 
+        bash .github/gh_deploy.sh ${{ secrets.GITHUB_TOKEN }} ${{ github.ref }} ${{ github.repository }} ${{ github.event.number }}
