@@ -2,9 +2,7 @@ name: memote
 
 on:
   push:
-    branches:
-      except:
-        - "gh-pages"
+
 
 jobs: 
 
