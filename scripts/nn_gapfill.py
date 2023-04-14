@@ -5,7 +5,7 @@ import cobra
 from pathlib import Path
 import os, sys
 
-logfile    = open("log", "w")
+logfile    = open("reactions_added.txt", "w")
 
 base_path  = "/".join(os.path.abspath(__file__).split("/")[:-2])
 draftModel = os.path.join(base_path, 'S_infantis_mvl3A.sbml')
