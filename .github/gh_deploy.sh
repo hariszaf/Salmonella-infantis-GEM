@@ -11,11 +11,11 @@ location=$(awk -F '=' '{if (! ($0 ~ /^;/) && $0 ~ /location/) print $2}' memote.
 GITHUB_TOKEN="$1"
 TRAVIS_BRANCH="$2"
 TRAVIS_REPO_SLUG="$3"
-TRAVIS_PULL_REQUEST="$4"
-
 echo "GITHUB_TOKEN: " $GITHUB_TOKEN 
 echo "TRAVIS_BRANCH": $TRAVIS_BRANCH
 echo $TRAVIS_REPO_SLUG
+
+TRAVIS_PULL_REQUEST="$4"
 echo $TRAVIS_PULL_REQUEST
 
 if [[ "${TRAVIS_PULL_REQUEST}" != "false" || "${TRAVIS_REPO_SLUG}" != "hariszaf/Salmonella-infantis-GEM" ]]; then
