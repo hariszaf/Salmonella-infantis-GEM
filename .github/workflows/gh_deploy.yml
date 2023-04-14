@@ -22,7 +22,6 @@ jobs:
         fetch-depth: 0
 
     - name: Set ENV variables
-      uses: actions/checkout@v2
       run: |
         echo "::set-env name=TRAVIS_BRANCH::${TRAVIS_BRANCH:-$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')}" 
         echo "::set-env name=TRAVIS_SECURE_ENV_VARS::$(if [ -z "${{ secrets.something }}" ]; then echo "false"; else echo "true"; fi)" 
