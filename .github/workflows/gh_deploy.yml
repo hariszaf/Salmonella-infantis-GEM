@@ -1,0 +1,47 @@
+name: memote
+
+on:
+  push:
+    branches:
+      except:
+        - "gh-pages"
+
+jobs: 
+
+  build: 
+
+    runs-on: ubuntu-latest
+
+    env:
+      TRAVIS_REPO_SLUG: ${{ github.repository }} 
+      TRAVIS_BRANCH: ${{ github.head_ref }} 
+      TRAVIS_PULL_REQUEST: ${{ github.event.number }}
+
+    steps: 
+ 
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Set ENV variables
+      uses: actions/checkout@v2
+      run: |
+        echo "::set-env name=TRAVIS_BRANCH::${TRAVIS_BRANCH:-$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')}" 
+        echo "::set-env name=TRAVIS_SECURE_ENV_VARS::$(if [ -z "${{ secrets.something }}" ]; then echo "false"; else echo "true"; fi)" 
+        echo "::set-env name=TRAVIS_EVENT_TYPE::$(if [ "schedule" == "${{ github.event_name }}" ]; then echo "cron"; else echo "${{ github.event_name }}"; fi)" 
+
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+ 
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip setuptools wheel
+        pip install --upgrade memote
+
+    - name: Build and Test
+      run: |
+        git checkout "${TRAVIS_BRANCH}"
+        bash .github/travis_deploy.sh ${{ secrets.GITHUB_TOKEN }}

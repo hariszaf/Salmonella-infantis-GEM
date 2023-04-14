@@ -7,9 +7,8 @@ echo "Parse memote.ini for values."
 deployment=$(awk -F '=' '{if (! ($0 ~ /^;/) && $0 ~ /deployment/) print $2}' memote.ini | tr -d ' ')
 location=$(awk -F '=' '{if (! ($0 ~ /^;/) && $0 ~ /location/) print $2}' memote.ini | tr -d ' ')
 
-echo "Configure Travis git user."
-git config --global user.email "deploy@travis-ci.org"
-git config --global user.name "Travis CI Deployment Bot"
+
+GITHUB_TOKEN="$1"
 
 if [[ "${TRAVIS_PULL_REQUEST}" != "false" || "${TRAVIS_REPO_SLUG}" != "hariszaf/Salmonella-infantis-GEM" ]]; then
     echo "Untracked build."
@@ -33,7 +32,7 @@ memote report history --filename="${output}"
 
 # Add, commit and push the files.
 git add "${output}"
-git commit -m "Travis report # ${TRAVIS_BUILD_NUMBER}"
+git commit -m "GitHub action report # ${{github.run_number}}"
 git push --quiet "https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git" "${deployment}" > /dev/null
 
 echo "Your new report will be visible at https://hariszaf.github.io/Salmonella-infantis-GEM in a moment."
