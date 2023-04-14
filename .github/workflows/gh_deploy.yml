@@ -1,0 +1,32 @@
+name: memote
+
+on:
+  push:
+
+
+jobs: 
+
+  build: 
+
+    runs-on: ubuntu-latest
+
+    steps: 
+ 
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+ 
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip setuptools wheel
+        pip install --upgrade memote
+
+    - name: Build and Test
+      run: |
+        git checkout "${{ github.ref }}"
+        bash .github/gh_deploy.sh ${{ secrets.GITHUB_TOKEN }} ${{ github.ref }} ${{ github.repository }} ${{ github.event.number }}

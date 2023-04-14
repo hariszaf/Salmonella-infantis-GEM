@@ -1,0 +1,662 @@
+
+Gapfill using a complete medium and the default biomass function
+
+NN gapfilling added 17 new readctionsrxn05017_c0	11.0 cpd00005_c0 + cpd00017_c0 + cpd00022_c0 + 10.0 cpd00067_c0 + 8.0 cpd00070_c0 <=> cpd11211_c0
+cpd00005_c0
+cpd00022_c0
+cpd00070_c0
+cpd11211_c0
+cpd00017_c0
+cpd00067_c0
+
+~~~~
+rxn32949_c0	cpd15560_c0 <=> cpd15560_e0
+cpd15560_c0
+cpd15560_e0
+
+~~~~
+rxn07217_c0	11.0 cpd00005_c0 + cpd00017_c0 + cpd00022_c0 + 18.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 6.0 cpd00001_c0 + 11.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd00019_c0 + cpd11211_c0
+cpd00005_c0
+cpd00017_c0
+cpd00022_c0
+cpd00067_c0
+cpd00070_c0
+cpd00001_c0
+cpd00006_c0
+cpd00010_c0
+cpd00011_c0
+cpd00019_c0
+cpd11211_c0
+
+~~~~
+rxn03167_c0	3.0 cpd00001_c0 + cpd02978_c0 --> 3.0 cpd00009_c0 + 2.0 cpd00067_c0 + cpd02961_c0
+cpd02978_c0
+cpd02961_c0
+cpd00001_c0
+cpd00009_c0
+cpd00067_c0
+
+~~~~
+rxn00979_c0	cpd00001_c0 + cpd00003_c0 + cpd00229_c0 <=> cpd00004_c0 + 2.0 cpd00067_c0 + cpd00139_c0
+cpd00139_c0
+cpd00001_c0
+cpd00003_c0
+cpd00229_c0
+cpd00004_c0
+cpd00067_c0
+
+~~~~
+rxn08244_c0	cpd15432_e0 <=> cpd15432_c0
+cpd15432_e0
+cpd15432_c0
+
+~~~~
+rxn48572_c0	cpd00017_c0 + cpd00067_c0 + cpd11425_c0 --> cpd00019_c0 + cpd15500_c0
+cpd11425_c0
+cpd00017_c0
+cpd00067_c0
+cpd00019_c0
+cpd15500_c0
+
+~~~~
+rxn09732_c0	cpd02557_c0 <=> cpd02557_e0
+cpd02557_c0
+cpd02557_e0
+
+~~~~
+EX_cpd15432_e0	cpd15432_e0 <=> 
+cpd15432_e0
+
+~~~~
+rxn13645_c0	2.0 cpd03495_c0 <=> 2.0 cpd02229_e0 + cpd15511_e0
+cpd02229_e0
+cpd15511_e0
+cpd03495_c0
+
+~~~~
+rxn31476_c0	37.0 cpd02295_c0 + 14.0 cpd02557_c0 --> 27.0 cpd00011_c0 + 14.0 cpd00012_c0 + 135.0 cpd00067_c0 + 47.0 cpd11425_c0
+cpd02295_c0
+cpd02557_c0
+cpd00011_c0
+cpd00012_c0
+cpd00067_c0
+cpd11425_c0
+
+~~~~
+EX_cpd02557_e0	cpd02557_e0 <=> 
+cpd02557_e0
+
+~~~~
+EX_cpd15511_e0	cpd15511_e0 <=> 
+cpd15511_e0
+
+~~~~
+rxn23650_c0	3.0 cpd00017_c0 + cpd00033_c0 <=> 3.0 cpd00019_c0 + 3.0 cpd00067_c0 + cpd00540_c0
+cpd00017_c0
+cpd00033_c0
+cpd00019_c0
+cpd00067_c0
+cpd00540_c0
+
+~~~~
+EX_cpd02229_e0	cpd02229_e0 <=> 
+cpd02229_e0
+
+~~~~
+rxn10336_c0	2.0 cpd15540_c0 <=> cpd00100_c0 + cpd15793_c0
+cpd15540_c0
+cpd00100_c0
+cpd15793_c0
+
+~~~~
+rxn41859_c0	cpd00149_c0 + cpd03426_c0 <=> 2.0 cpd00067_c0
+cpd00149_c0
+cpd03426_c0
+cpd00067_c0
+
+~~~~
+
+
+------------------------------------------------
+
+
+Gapfill using the mvl3-A medium with yeast extract and the default biomass function
+
+NN gapfilling added 69 new readctionsrxn48224_c0	cpd00020_c0 + cpd00066_c0 <=> cpd00035_c0
+cpd00020_c0
+cpd00066_c0
+cpd00035_c0
+
+~~~~
+rxn05017_c0	11.0 cpd00005_c0 + cpd00017_c0 + cpd00022_c0 + 10.0 cpd00067_c0 + 8.0 cpd00070_c0 <=> cpd11211_c0
+cpd00005_c0
+cpd00022_c0
+cpd00070_c0
+cpd11211_c0
+cpd00017_c0
+cpd00067_c0
+
+~~~~
+rxn05294_c0	0.884 cpd00115_c0 + 0.6692 cpd00241_c0 + 0.6684 cpd00356_c0 + 0.8807 cpd00357_c0 <=> 3.1023 cpd00012_c0 + cpd11461_c0
+cpd00115_c0
+cpd00241_c0
+cpd00356_c0
+cpd00357_c0
+cpd11461_c0
+cpd00012_c0
+
+~~~~
+EX_cpd00104_e0	cpd00104_e0 <=> 
+cpd00104_e0
+
+~~~~
+rxn31586_c0	0.378 cpd00023_c0 + 0.74 cpd00033_c0 + 0.624 cpd00035_c0 + 0.38 cpd00039_c0 + 0.417 cpd00041_c0 + 0.319 cpd00051_c0 + 0.529 cpd00054_c0 + 0.372 cpd00060_c0 + 0.272 cpd00065_c0 + 0.336 cpd00066_c0 + 0.307 cpd00069_c0 + 0.423 cpd00107_c0 + 0.358 cpd00119_c0 + 0.483 cpd00129_c0 + 0.474 cpd00156_c0 + 0.467 cpd00161_c0 + 0.423 cpd00322_c0 + 0.231 cpd00381_c0 <=> cpd11612_c0
+cpd00033_c0
+cpd00039_c0
+cpd00041_c0
+cpd00054_c0
+cpd00060_c0
+cpd00065_c0
+cpd00069_c0
+cpd00107_c0
+cpd00119_c0
+cpd00129_c0
+cpd00161_c0
+cpd00322_c0
+cpd00381_c0
+cpd11612_c0
+cpd00023_c0
+cpd00035_c0
+cpd00051_c0
+cpd00066_c0
+cpd00156_c0
+
+~~~~
+rxn35472_c0	cpd00001_c0 + 3.0 cpd00007_c0 + cpd00013_c0 + cpd00873_c0 + cpd01997_c0 --> cpd00009_c0 + 3.0 cpd00047_c0 + 5.0 cpd00067_c0 + cpd00220_c0
+cpd00007_c0
+cpd00001_c0
+cpd00013_c0
+cpd00873_c0
+cpd01997_c0
+cpd00009_c0
+cpd00047_c0
+cpd00067_c0
+cpd00220_c0
+
+~~~~
+rxn06998_c0	cpd00134_c0 <=> cpd00010_c0
+cpd00134_c0
+cpd00010_c0
+
+~~~~
+rxn07217_c0	11.0 cpd00005_c0 + cpd00017_c0 + cpd00022_c0 + 18.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 6.0 cpd00001_c0 + 11.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd00019_c0 + cpd11211_c0
+cpd00005_c0
+cpd00017_c0
+cpd00022_c0
+cpd00067_c0
+cpd00070_c0
+cpd00001_c0
+cpd00006_c0
+cpd00010_c0
+cpd00011_c0
+cpd00019_c0
+cpd11211_c0
+
+~~~~
+rxn40040_c0	5.0 cpd00001_c0 + 8.0 cpd00109_c0 + cpd00268_c0 <=> 2.0 cpd00048_c0 + 11.0 cpd00067_c0 + 8.0 cpd00110_c0
+cpd00109_c0
+cpd00268_c0
+cpd00110_c0
+cpd00001_c0
+cpd00048_c0
+cpd00067_c0
+
+~~~~
+rxn06422_c0	cpd01078_c0 + cpd11621_c0 <=> cpd03387_c0 + cpd11620_c0
+cpd11621_c0
+cpd03387_c0
+cpd11620_c0
+cpd01078_c0
+
+~~~~
+rxn21660_c0	3.0 cpd00001_c0 + 2.0 cpd23343_c0 <=> 4.0 cpd00117_c0 + cpd02229_c0 + cpd23344_c0
+cpd23343_c0
+cpd00117_c0
+cpd23344_c0
+cpd00001_c0
+cpd02229_c0
+
+~~~~
+rxn16019_c0	2.0 cpd00001_c0 + cpd08028_c0 <=> 4.0 cpd00067_c0 + 3.0 cpd00099_c0 + cpd00180_c0
+cpd08028_c0
+cpd00180_c0
+cpd00001_c0
+cpd00067_c0
+cpd00099_c0
+
+~~~~
+rxn38695_c0	cpd00006_c0 --> cpd00002_c0 + cpd00003_c0
+cpd00002_c0
+cpd00003_c0
+cpd00006_c0
+
+~~~~
+rxn31601_c0	1.527 cpd00023_c0 + 0.044 cpd00033_c0 + 1.153 cpd00035_c0 + 5.7e-05 cpd00039_c0 + 0.414 cpd00041_c0 + 0.096 cpd00051_c0 + 0.612 cpd00054_c0 + 0.123 cpd00060_c0 + 0.004 cpd00065_c0 + 0.313 cpd00066_c0 + 0.244 cpd00069_c0 + 1.509 cpd00107_c0 + 0.091 cpd00119_c0 + 0.762 cpd00129_c0 + 0.249 cpd00156_c0 + 0.175 cpd00161_c0 + 0.464 cpd00322_c0 + 0.031 cpd00381_c0 <=> cpd11463_c0
+cpd11463_c0
+cpd00023_c0
+cpd00033_c0
+cpd00035_c0
+cpd00039_c0
+cpd00041_c0
+cpd00051_c0
+cpd00054_c0
+cpd00060_c0
+cpd00065_c0
+cpd00066_c0
+cpd00069_c0
+cpd00107_c0
+cpd00119_c0
+cpd00129_c0
+cpd00156_c0
+cpd00161_c0
+cpd00322_c0
+cpd00381_c0
+
+~~~~
+rxn47459_c0	cpd00002_c0 + cpd00042_c0 + cpd00264_c0 <=> cpd00008_c0 + cpd00009_c0 + cpd00067_c0
+cpd00002_c0
+cpd00042_c0
+cpd00264_c0
+cpd00008_c0
+cpd00009_c0
+cpd00067_c0
+
+~~~~
+rxn09345_c0	8.0 cpd00113_c0 + cpd00350_c0 <=> 8.0 cpd00012_c0 + 8.0 cpd00067_c0 + cpd02229_c0
+cpd00113_c0
+cpd00350_c0
+cpd00012_c0
+cpd00067_c0
+cpd02229_c0
+
+~~~~
+rxn05816_c0	cpd00012_c0 --> cpd00115_c0
+cpd00115_c0
+cpd00012_c0
+
+~~~~
+rxn08244_c0	cpd15432_e0 <=> cpd15432_c0
+cpd15432_e0
+cpd15432_c0
+
+~~~~
+rxn48572_c0	cpd00017_c0 + cpd00067_c0 + cpd11425_c0 --> cpd00019_c0 + cpd15500_c0
+cpd11425_c0
+cpd00017_c0
+cpd00067_c0
+cpd00019_c0
+cpd15500_c0
+
+~~~~
+EX_cpd00205_e0	cpd00205_e0 <=> 
+cpd00205_e0
+
+~~~~
+EX_cpd00305_e0	cpd00305_e0 <=> 
+cpd00305_e0
+
+~~~~
+EX_cpd15432_e0	cpd15432_e0 <=> 
+cpd15432_e0
+
+~~~~
+rxn01654_c0	2.0 cpd00067_c0 + cpd00502_c0 --> cpd00013_c0 + cpd00347_c0
+cpd00502_c0
+cpd00067_c0
+cpd00013_c0
+cpd00347_c0
+
+~~~~
+rxn10104_c0	7.0 cpd00001_c0 + cpd00002_c0 + 7.0 cpd00003_c0 + 8.0 cpd00010_c0 + 7.0 cpd00015_c0 + cpd00214_c0 <=> 7.0 cpd00004_c0 + cpd00012_c0 + cpd00018_c0 + 8.0 cpd00022_c0 + 8.0 cpd00067_c0 + 7.0 cpd00982_c0
+cpd00001_c0
+cpd00002_c0
+cpd00003_c0
+cpd00010_c0
+cpd00015_c0
+cpd00214_c0
+cpd00004_c0
+cpd00012_c0
+cpd00018_c0
+cpd00022_c0
+cpd00067_c0
+cpd00982_c0
+
+~~~~
+rxn06718_c0	cpd02229_c0 --> cpd03495_c0
+cpd03495_c0
+cpd02229_c0
+
+~~~~
+EX_cpd00254_e0	cpd00254_e0 <=> 
+cpd00254_e0
+
+~~~~
+EX_cpd00156_e0	cpd00156_e0 <=> 
+cpd00156_e0
+
+~~~~
+rxn05818_c0	cpd00012_c0 --> cpd00356_c0
+cpd00356_c0
+cpd00012_c0
+
+~~~~
+rxn43154_c0	cpd00003_c0 + cpd00033_c0 + cpd28218_c0 <=> cpd00004_c0 + cpd00011_c0 + cpd00013_c0
+cpd28218_c0
+cpd00003_c0
+cpd00033_c0
+cpd00004_c0
+cpd00011_c0
+cpd00013_c0
+
+~~~~
+EX_cpd00030_e0	cpd00030_e0 <=> 
+cpd00030_e0
+
+~~~~
+rxn31599_c0	cpd29873_c0 --> 0.246 cpd00002_c0 + 0.239 cpd00038_c0 + 0.259 cpd00052_c0 + 0.258 cpd00062_c0 + 0.254 cpd00115_c0 + 0.246 cpd00241_c0 + 0.268 cpd00356_c0 + 0.259 cpd00357_c0
+cpd29873_c0
+cpd00002_c0
+cpd00038_c0
+cpd00052_c0
+cpd00062_c0
+cpd00115_c0
+cpd00241_c0
+cpd00356_c0
+cpd00357_c0
+
+~~~~
+rxn31476_c0	37.0 cpd02295_c0 + 14.0 cpd02557_c0 --> 27.0 cpd00011_c0 + 14.0 cpd00012_c0 + 135.0 cpd00067_c0 + 47.0 cpd11425_c0
+cpd02295_c0
+cpd02557_c0
+cpd00011_c0
+cpd00012_c0
+cpd00067_c0
+cpd11425_c0
+
+~~~~
+rxn29122_c0	cpd00104_e0 <=> cpd00104_c0
+cpd00104_e0
+cpd00104_c0
+
+~~~~
+rxn47589_c0	cpd00023_c0 + cpd00502_c0 <=> cpd00344_c0 + cpd28218_c0
+cpd00344_c0
+cpd00023_c0
+cpd00502_c0
+cpd28218_c0
+
+~~~~
+EX_cpd00322_e0	cpd00322_e0 <=> 
+cpd00322_e0
+
+~~~~
+rxn43310_c0	cpd00007_c0 + 2.0 cpd00042_c0 <=> cpd00025_c0
+cpd00007_c0
+cpd00042_c0
+cpd00025_c0
+
+~~~~
+rxn11308_c0	cpd00002_c0 + 9.0 cpd00003_c0 + 9.0 cpd00010_c0 + 9.0 cpd00015_c0 + cpd01080_c0 <=> 9.0 cpd00004_c0 + cpd00012_c0 + cpd00018_c0 + 9.0 cpd00022_c0 + 9.0 cpd00067_c0 + 9.0 cpd00982_c0
+cpd00002_c0
+cpd00003_c0
+cpd00010_c0
+cpd00015_c0
+cpd01080_c0
+cpd00004_c0
+cpd00012_c0
+cpd00018_c0
+cpd00022_c0
+cpd00067_c0
+cpd00982_c0
+
+~~~~
+rxn07123_c0	cpd00001_c0 <=> cpd11422_c0
+cpd11422_c0
+cpd00001_c0
+
+~~~~
+rxn34305_c0	cpd00001_c0 + cpd11657_c0 <=> cpd00179_c0
+cpd11657_c0
+cpd00001_c0
+cpd00179_c0
+
+~~~~
+EX_cpd00635_e0	cpd00635_e0 <=> 
+cpd00635_e0
+
+~~~~
+rxn00566_c0	cpd00001_c0 + cpd00084_c0 --> cpd00013_c0 + cpd00020_c0 + cpd00067_c0 + cpd00239_c0
+cpd00001_c0
+cpd00084_c0
+cpd00013_c0
+cpd00020_c0
+cpd00067_c0
+cpd00239_c0
+
+~~~~
+rxn31598_c0	6.799 cpd11463_c0 + 0.781 cpd11612_c0 + 0.061 cpd29873_c0 <=> cpd03612_c0
+cpd03612_c0
+cpd11463_c0
+cpd11612_c0
+cpd29873_c0
+
+~~~~
+rxn05296_c0	0.4928 cpd00023_c0 + 0.7723 cpd00033_c0 + 0.5051 cpd00035_c0 + 0.6114 cpd00039_c0 + 0.2801 cpd00041_c0 + 0.3653 cpd00051_c0 + 0.4928 cpd00053_c0 + 0.4091 cpd00054_c0 + 0.2145 cpd00060_c0 + 0.1028 cpd00065_c0 + 0.3329 cpd00066_c0 + 0.2097 cpd00069_c0 + 0.1073 cpd00084_c0 + 0.6555 cpd00107_c0 + 0.1546 cpd00119_c0 + 0.3041 cpd00129_c0 + 0.2801 cpd00132_c0 + 0.5807 cpd00156_c0 + 0.3526 cpd00161_c0 + 0.5107 cpd00322_c0 <=> cpd11463_c0
+cpd00023_c0
+cpd00033_c0
+cpd00035_c0
+cpd00039_c0
+cpd00041_c0
+cpd00051_c0
+cpd00053_c0
+cpd00054_c0
+cpd00060_c0
+cpd00065_c0
+cpd00066_c0
+cpd00069_c0
+cpd00084_c0
+cpd00107_c0
+cpd00119_c0
+cpd00129_c0
+cpd00132_c0
+cpd00156_c0
+cpd00161_c0
+cpd00322_c0
+cpd11463_c0
+
+~~~~
+rxn00110_c0	cpd00004_c0 + cpd00007_c0 + cpd03612_c0 <=> cpd00003_c0 + cpd00013_c0 + cpd00049_c0
+cpd00049_c0
+cpd00004_c0
+cpd00007_c0
+cpd03612_c0
+cpd00003_c0
+cpd00013_c0
+
+~~~~
+rxn05962_c0	2.0 cpd00001_c0 + cpd11624_c0 <=> 2.0 cpd00049_c0 + 2.0 cpd00067_c0 + cpd00507_c0
+cpd11624_c0
+cpd00001_c0
+cpd00049_c0
+cpd00067_c0
+cpd00507_c0
+
+~~~~
+EX_cpd00381_e0	cpd00381_e0 --> 
+cpd00381_e0
+
+~~~~
+rxn39476_c0	6.0 cpd00013_c0 + cpd03421_c0 + cpd19039_c0 <=> 7.0 cpd00001_c0 + cpd03422_c0
+cpd19039_c0
+cpd00013_c0
+cpd03421_c0
+cpd00001_c0
+cpd03422_c0
+
+~~~~
+rxn06418_c0	3.0 cpd00001_c0 + 3.0 cpd00005_c0 + cpd01078_c0 <=> 3.0 cpd00006_c0 + 10.0 cpd00067_c0 + cpd03387_c0
+cpd00001_c0
+cpd00005_c0
+cpd01078_c0
+cpd00006_c0
+cpd00067_c0
+cpd03387_c0
+
+~~~~
+rxn45894_c0	2.0 cpd00042_c0 + cpd00268_c0 <=> cpd00067_c0 + cpd00081_c0 + cpd00239_c0
+cpd00042_c0
+cpd00268_c0
+cpd00067_c0
+cpd00081_c0
+cpd00239_c0
+
+~~~~
+rxn12504_c0	cpd00067_e0 <=> cpd00067_c0 + cpd10515_c0
+cpd00067_e0
+cpd10515_c0
+cpd00067_c0
+
+~~~~
+rxn07095_c0	2.0 cpd00003_c0 <=> cpd00004_c0 + cpd00067_c0
+cpd00003_c0
+cpd00004_c0
+cpd00067_c0
+
+~~~~
+rxn11296_c0	337.2 cpd00002_c0 + 17.7 cpd00206_c0 + 32.3 cpd00294_c0 + 17.7 cpd00296_c0 + 32.3 cpd00298_c0 <=> 337.2 cpd00008_c0 + 337.2 cpd00009_c0 + 100.0 cpd11461_c0
+cpd00002_c0
+cpd00206_c0
+cpd00294_c0
+cpd00296_c0
+cpd00298_c0
+cpd00008_c0
+cpd00009_c0
+cpd11461_c0
+
+~~~~
+rxn16020_c0	cpd08028_c0 <=> cpd00011_c0
+cpd08028_c0
+cpd00011_c0
+
+~~~~
+EX_cpd00034_e0	cpd00034_e0 <=> 
+cpd00034_e0
+
+~~~~
+EX_cpd00063_e0	cpd00063_e0 <=> 
+cpd00063_e0
+
+~~~~
+rxn41010_c0	cpd00002_c0 + cpd00023_c0 + cpd00118_c0 <=> cpd00008_c0 + cpd00009_c0 + cpd00067_c0
+cpd00002_c0
+cpd00023_c0
+cpd00118_c0
+cpd00008_c0
+cpd00009_c0
+cpd00067_c0
+
+~~~~
+rxn47036_c0	2.0 cpd23343_c0 <=> cpd00117_c0 + cpd23344_c0
+cpd23343_c0
+cpd00117_c0
+cpd23344_c0
+
+~~~~
+rxn19164_c0	cpd00003_c0 + cpd19039_c0 <=> cpd00004_c0 + cpd00067_c0 + cpd01298_c0
+cpd00003_c0
+cpd19039_c0
+cpd00004_c0
+cpd00067_c0
+cpd01298_c0
+
+~~~~
+rxn01833_c0	cpd00001_c0 + cpd00007_c0 + cpd01298_c0 --> cpd00013_c0 + cpd00025_c0 + cpd00428_c0
+cpd00001_c0
+cpd00007_c0
+cpd01298_c0
+cpd00013_c0
+cpd00025_c0
+cpd00428_c0
+
+~~~~
+rxn10106_c0	8.0 cpd00001_c0 + cpd00002_c0 + 8.0 cpd00003_c0 + 9.0 cpd00010_c0 + 8.0 cpd00015_c0 + cpd01080_c0 <=> 8.0 cpd00004_c0 + cpd00012_c0 + cpd00018_c0 + 9.0 cpd00022_c0 + 9.0 cpd00067_c0 + 8.0 cpd00982_c0
+cpd00001_c0
+cpd00002_c0
+cpd00003_c0
+cpd00010_c0
+cpd00015_c0
+cpd01080_c0
+cpd00004_c0
+cpd00012_c0
+cpd00018_c0
+cpd00022_c0
+cpd00067_c0
+cpd00982_c0
+
+~~~~
+rxn33894_c0	50.0 cpd00002_c0 + 50.0 cpd00089_c0 <=> 50.0 cpd00008_c0 + 50.0 cpd00012_c0 + cpd11657_c0
+cpd00002_c0
+cpd00089_c0
+cpd00008_c0
+cpd00012_c0
+cpd11657_c0
+
+~~~~
+rxn10336_c0	2.0 cpd15540_c0 <=> cpd00100_c0 + cpd15793_c0
+cpd15540_c0
+cpd00100_c0
+cpd15793_c0
+
+~~~~
+EX_cpd00028_e0	cpd00028_e0 <=> 
+cpd00028_e0
+
+~~~~
+rxn31650_c0	cpd00002_c0 + cpd00082_c0 --> 3.0 cpd00008_c0 + cpd00072_c0
+cpd00002_c0
+cpd00082_c0
+cpd00008_c0
+cpd00072_c0
+
+~~~~
+EX_cpd00058_e0	cpd00058_e0 <=> 
+cpd00058_e0
+
+~~~~
+rxn01315_c0	cpd00007_c0 + cpd00066_c0 + cpd00233_c0 --> cpd00001_c0 + cpd00069_c0 + cpd00231_c0
+cpd00007_c0
+cpd00066_c0
+cpd00233_c0
+cpd00001_c0
+cpd00069_c0
+cpd00231_c0
+
+~~~~
+rxn46162_c0	cpd00020_c0 + cpd00065_c0 <=> cpd00035_c0
+cpd00020_c0
+cpd00065_c0
+cpd00035_c0
+
+~~~~
+EX_cpd10516_e0	cpd10516_e0 <=> 
+cpd10516_e0
+
+~~~~
+rxn05963_c0	cpd00001_c0 + cpd11624_c0 <=> cpd00067_c0 + cpd00098_c0 + cpd11422_c0
+cpd00001_c0
+cpd11624_c0
+cpd00067_c0
+cpd00098_c0
+cpd11422_c0
+
+~~~~
