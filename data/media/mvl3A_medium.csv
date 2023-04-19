@@ -1,7 +1,7 @@
 id	name	concentration	minflux	maxflux
 cpd00035	L-Alanine	0.264	-100	100
 cpd00051	L-Arginine	0.1375	-100	100
-cpd00041	Aspartate	0.46	-100	100
+cpd00041	L-Aspartate	0.46	-100	100
 cpd00084	L-Cysteine	0.15	-100	100
 cpd00023	L-Glutamate	0.55	-100	100
 cpd00119	L-Histidine	0.165	-100	100
@@ -56,7 +56,6 @@ cpd26290	FeCl2	0.1	-100	100
 cpd13392	Tween 80 	0.1	-100	100
 cpd27312	Inulin	0.1	-100	100
 cpd11602	Inulin	0.1	-100	100
-cpd00084	L-Cysteine	0.15	-100	100
 cpd00009	Phosphate	0.5	-100	100
 cpd00149	Cobalt	0.1	-100	100
 cpd00034	Zn2+	0.1	-100	100
@@ -72,9 +71,8 @@ cpd00281	4-Aminobutanoate	0.1	-100	100
 cpd00029	Acetate	0.1	-100	100
 cpd00182	Adenosine	0.1	-100	100
 cpd00132	L-Asparagine	0.1	-100	100
-cpd00041	L-Aspartate	0.1	-100	100
 cpd01017	Cys-Gly	0.1	-100	100
-cpd00137	Citrate		0.1	-100	100
+cpd00137	Citrate	0.1	-100	100
 cpd00367	Cytidine	0.1	-100	100
 cpd00438	Deoxyadenosine	0.1	-100	100
 cpd00654	Deoxycytidine	0.1	-100	100
@@ -106,4 +104,3 @@ cpd00092	Uracil	0.1	-100	100
 cpd00073	Urea	0.1	-100	100
 cpd00249	Uridine	0.1	-100	100
 cpd00309	Xanthine	0.1	-100	100
-cpd15432	LipidA	0.001	-100	100

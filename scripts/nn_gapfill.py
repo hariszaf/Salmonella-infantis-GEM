@@ -1,31 +1,97 @@
 #!/usr/bin/env python 
+"""
+Aim of this script is to gapfill a draft reconstruction. 
+It assumes your reconstructions are under the /results/models folder of the GitHub repo
+and any media under data/media/.
 
+Usage:
+./nn_gapfill.py draft_reconstr_filename gf_reconstr_filename <optional: name_of_obj_function> <optional: media_filename>
+
+Examples:
+* complete media and default obj. function
+./nn_gapfill.py S_infantis_mvl3A.sbml.modelseedpy S_infantis_gf_complMed.sbml
+
+* with media and another obj. function
+./nn_gapfill.py modelseedpy_draft_invivo_bf.sbml modelseedpy_gf_mvl3_invivo.sbml biomass_invivo mvl3A_medium.csv
+"""
 import dnngior
 import cobra
-from pathlib import Path
+import argparse
 import os, sys
 
-logfile    = open("reactions_added.txt", "w")
+# Load arguments
+parser = argparse.ArgumentParser(
+    description='Gapfill a draft reconstruction using the dnngior library',
+    usage='use "%(prog)s --help" for more information',
+    formatter_class=argparse.RawTextHelpFormatter)
 
-base_path  = "/".join(os.path.abspath(__file__).split("/")[:-2])
-draftModel = os.path.join(base_path, 'S_infantis_mvl3A.sbml')
+parser.add_argument(
+        '-i', '--draft-reconstruction', dest='draft_reconstruction', help="Reconstruction to gapfill", required=True, type=str
+    )
+parser.add_argument(
+        '-o', '--gapfilled-recosntruction', dest='gapfilled_reconstruction', help="Gapfilled output reconstruction", required=True, type=str
+    )
+parser.add_argument(
+        '-m', '--media', dest='media', help="Media to gapfill based on", required=False, type=str, default=None
+    )
+parser.add_argument(
+        '-z', '--objective-function', dest='objective_function', help="Objective function to gapfill based on", required=False, type=str, default="bio1"
+    )
 
-# CASE 1: Gapfill draft reaconstruction with complete media
-# ----------------------------------------------------------
+args = parser.parse_args()
+
+
+# Init the logfile
+if os.path.exists("reactions_added.txt"):
+    logfile    = open("reactions_added.txt", "a")
+else:
+    logfile    = open("reactions_added.txt", "w")
+
+# Path where repo is located
+base_path   = "/".join(os.path.abspath(__file__).split("/")[:-2])
+
+# Load media if provided
+if args.media is not None:
+    media_path     = os.path.join(base_path, "data/media")
+    media_file     = os.path.join(media_path, args.media)
+
+    media = {}
+    with open(media_file) as f:
+        f.readline()
+        for line in f:
+            a = line.strip().split('\t')
+            media['EX_' + a[0] + '_e0'] = {'lower_bound':-1, 'upper_bound':1, 'metabolites':{a[0]+'_e0':-1.0}}
+else:
+    media = None
+
+
+# Path to draft reconstruction
+models_path = os.path.join(base_path, "results/models")
+draftModel  = os.path.join(models_path, args.draft_reconstruction)
 
 # Gapfill
-gapfill            = dnngior.Gapfill(draftModel, medium = None, objectiveName = 'bio1')
+gapfill = dnngior.Gapfill(draftModel, medium = media, objectiveName = args.objective_function)
 
 # Export gapfilled model
 gf_model_compl_med = gapfill.gapfilledModel.copy()
-modelname = os.path.join(base_path, "S_infantis_gf_complMed.sbml")
-cobra.io.write_sbml_model(cobra_model = gf_model_compl_med, filename = modelname)
+gf_model_filename = os.path.join(models_path, args.gapfilled_reconstruction)
+cobra.io.write_sbml_model(cobra_model = gf_model_compl_med, filename = gf_model_filename)
 
 print("NN gapfilling added {} new readctions".format(len(gapfill.added_reactions)))
 print("The NN gapfilled model, comes with {} reactions and {} metabolites".format(len(gf_model_compl_med.metabolites), len(gf_model_compl_med.reactions)))
 
-logfile.write("\nGapfill using a complete medium and the default biomass function\n\n")
+if args.media is None:
+    logfile.write("Gapfill using a complete medium\n")
+else:
+    logfile.write("Gapfill using medium: " + args.media + "\n")
+
+if args.objective_function == "bio1": 
+    logfile.write("Gapfill using the default biomass function\n")
+else:
+    logfile.write("Gapfill using an alternative objective function: " + args.objective_function)
+
 logfile.write("NN gapfilling added {} new readctions".format(len(gapfill.added_reactions)))
+
 
 # Keep track of what was added
 for reaction in gf_model_compl_med.reactions:
@@ -38,45 +104,4 @@ for reaction in gf_model_compl_med.reactions:
 
 
 logfile.write("\n\n------------------------------------------------\n\n")
-
-
-# CASE 2: Gapfill draft reaconstruction with mvl3A + yeast extract media and the default biomass function
-# ---------------------------------------------------------------------------------------------------------
-
-mvl3_media_file = os.path.join(base_path, 'data/media/mvl3A_medium.csv')
-
-# Import media 
-mvl3A = {}
-with open(mvl3_media_file) as f:
-    f.readline()
-    for line in f:
-        a = line.strip().split('\t')
-        mvl3A['EX_' + a[0] + '_e0'] = {'lower_bound':-1, 'upper_bound':1, 'metabolites':{a[0]+'_e0':-1.0}}
-
-
-# Gapfill using mvl3A with yeast extract
-gapfill_mvl3A = dnngior.Gapfill(draftModel, medium = mvl3A, objectiveName = 'bio1')
-
-# # Make a copy of the gapfilled model
-gf_model_mvl3A_med = gapfill_mvl3A.gapfilledModel.copy()
-
-# and export it to a new sbml file
-modelname = os.path.join(base_path, "S_infantis_gf_mvl3A.sbml")
-cobra.io.write_sbml_model(cobra_model = gf_model_mvl3A_med, filename = modelname)
-
-print("NN gapfilling added {} new readctions".format(len(gapfill_mvl3A.added_reactions)))
-print("The NN gapfilled model, comes with {} reactions and {} metabolites".format(len(gf_model_mvl3A_med.metabolites), len(gf_model_mvl3A_med.reactions)))
-
-logfile.write("\nGapfill using the mvl3-A medium with yeast extract and the default biomass function\n\n")
-logfile.write("NN gapfilling added {} new readctions".format(len(gapfill_mvl3A.added_reactions)))
-
-
-# Keep track of what was added
-for reaction in gf_model_mvl3A_med.reactions:
-    if reaction.id in gapfill_mvl3A.added_reactions:
-        logfile.write(reaction.id + "\t" + reaction.build_reaction_string() + "\n")
-        for compound in reaction.metabolites:
-            logfile.write(compound.id + "\n")
-
-        logfile.write("\n~~~~\n")
 
