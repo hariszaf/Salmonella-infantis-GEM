@@ -14,12 +14,11 @@ Examples:
 * with media and another obj. function
 ./nn_gapfill.py modelseedpy_draft_invivo_bf.sbml modelseedpy_gf_mvl3_invivo.sbml biomass_invivo mvl3A_medium.csv
 """
-import dnngior
-import cobra
+
+# Load arguments
 import argparse
 import os, sys
 
-# Load arguments
 parser = argparse.ArgumentParser(
     description='Gapfill a draft reconstruction using the dnngior library',
     usage='use "%(prog)s --help" for more information',
@@ -40,6 +39,10 @@ parser.add_argument(
 
 args = parser.parse_args()
 
+# Import libraries
+import dnngior
+import cobra
+
 
 # Init the logfile
 if os.path.exists("reactions_added.txt"):
@@ -52,9 +55,8 @@ base_path   = "/".join(os.path.abspath(__file__).split("/")[:-2])
 
 # Load media if provided
 if args.media is not None:
-    media_path     = os.path.join(base_path, "data/media")
-    media_file     = os.path.join(media_path, args.media)
 
+    media_file     = args.media # os.path.join(base_path, args.media)
     media = {}
     with open(media_file) as f:
         f.readline()
@@ -65,21 +67,20 @@ else:
     media = None
 
 
-# Path to draft reconstruction
-models_path = os.path.join(base_path, "results/models")
-draftModel  = os.path.join(models_path, args.draft_reconstruction)
-
 # Gapfill
-gapfill = dnngior.Gapfill(draftModel, medium = media, objectiveName = args.objective_function)
+gapfill = dnngior.Gapfill(args.draft_reconstruction, medium = media, objectiveName = args.objective_function)
 
 # Export gapfilled model
 gf_model_compl_med = gapfill.gapfilledModel.copy()
-gf_model_filename = os.path.join(models_path, args.gapfilled_reconstruction)
+gf_model_filename = os.path.join(base_path, args.gapfilled_reconstruction)
 cobra.io.write_sbml_model(cobra_model = gf_model_compl_med, filename = gf_model_filename)
 
 print("NN gapfilling added {} new readctions".format(len(gapfill.added_reactions)))
 print("The NN gapfilled model, comes with {} reactions and {} metabolites".format(len(gf_model_compl_med.metabolites), len(gf_model_compl_med.reactions)))
 
+
+logfile.write("Gapfill the model:" + args.draft_reconstruction.split("/")[-1] + "\n")
+logfile.write("Gapfilled model:" + args.gapfilled_reconstruction.split("/")[-1] + "\n")
 if args.media is None:
     logfile.write("Gapfill using a complete medium\n")
 else:
@@ -96,7 +97,7 @@ logfile.write("NN gapfilling added {} new readctions".format(len(gapfill.added_r
 # Keep track of what was added
 for reaction in gf_model_compl_med.reactions:
     if reaction.id in gapfill.added_reactions:
-        logfile.write(reaction.id + "\t" + reaction.build_reaction_string() + "\n")
+        logfile.write(reaction.id + "\t~~~\t" + reaction.build_reaction_string() + "\n")
         for compound in reaction.metabolites:
             logfile.write(compound.id + "\n")
 
